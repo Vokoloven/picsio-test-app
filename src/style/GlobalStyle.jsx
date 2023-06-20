@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
-
   body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
