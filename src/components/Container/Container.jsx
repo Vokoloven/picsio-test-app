@@ -1,6 +1,6 @@
-import { StyledContainer } from "./style/styledContainer"
+/* eslint-disable react/prop-types */
+import { StyledContainer } from "./style/styledContainer";
 
-// eslint-disable-next-line react/prop-types
 export const Container = ({ children }) => {
-  return <StyledContainer>{children}</StyledContainer>
-}
+  return <StyledContainer>{children}</StyledContainer>;
+};
