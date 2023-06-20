@@ -2,7 +2,7 @@
   "name": "picsio-test-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://vokoloven.github.io/picsio-test-app/",
+  "homepage": "https://Vokoloven.github.io/picsio-test-app",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
