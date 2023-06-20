@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { getCommentsApi } from "service/api.service";
+import { getCommentsApi } from "@service/api.service";
 
 export const useData = (deleteComment) => {
   const [data, setData] = useState([]);

@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-import { Box } from "style/Box";
+import { Box } from "@style/Box";
 import { StyledAvatarBox } from "./style/StyledAvatarBox";
 import { StyledCommentBox } from "./style/StyledCommentBox";
 import { StyledNameBox } from "./style/StyledNameBox";
-import { DeleteButton } from "components/Buttons/";
-import { StyledCloseIcon } from "components/Buttons/DeleteButton";
+import { DeleteButton } from "@components/Buttons/";
+import { StyledCloseIcon } from "@components/Buttons/DeleteButton";
 
 export const Comment = ({ body, user, id, onClickHandler }) => {
   return (

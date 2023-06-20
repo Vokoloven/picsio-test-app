@@ -15,12 +15,12 @@ export default defineConfig({
   base: "/picsio-test-app/",
   resolve: {
     alias: {
-      components: path.resolve(__dirname, "./src/components/"),
-      style: path.resolve(__dirname, "./src/style/"),
-      page: path.resolve(__dirname, "./src/page"),
-      assets: path.resolve(__dirname, "./src/assets"),
-      service: path.resolve(__dirname, "./src/service"),
-      hooks: path.resolve(__dirname, "./src/hooks"),
+      "@components": path.resolve(__dirname, "./src/components/"),
+      "@style": path.resolve(__dirname, "./src/style/"),
+      "@page": path.resolve(__dirname, "./src/page"),
+      "@assets": path.resolve(__dirname, "./src/assets"),
+      "@service": path.resolve(__dirname, "./src/service"),
+      "@hooks": path.resolve(__dirname, "./src/hooks"),
     },
   },
   plugins: [

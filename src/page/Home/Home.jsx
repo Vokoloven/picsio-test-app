@@ -1,11 +1,11 @@
-import { Container } from "components/Container";
+import { Container } from "@components/Container";
 import { useState, useEffect } from "react";
 import { StyledHomeBox } from "./style/StyledHomeBox";
-import { Box } from "style/Box";
-import { Comment } from "components/Comment";
-import { Form } from "components/Form";
+import { Box } from "@style/Box";
+import { Comment } from "@components/Comment";
+import { Form } from "@components/Form";
 import { StyledList } from "./style/StyledList";
-import { useData } from "hooks/useData";
+import { useData } from "@hooks/useData";
 
 export const Home = () => {
   const [deleteComment, setDeleteComment] = useState([]);

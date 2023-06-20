@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as CloseIcon } from "assets/close.svg";
+import { ReactComponent as CloseIcon } from "@assets/close.svg";
 
 export const DeleteButton = styled("button")`
   position: absolute;

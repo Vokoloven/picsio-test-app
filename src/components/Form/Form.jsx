@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import { SubmitButton } from "components/Buttons/";
-import { Box } from "style/Box";
+import { SubmitButton } from "@components/Buttons/";
+import { Box } from "@style/Box";
 import { Textarea } from "./style/Textarea";
 
 export const Form = ({ localValue, onChangeHandler, onSubmitHandler }) => {
