@@ -11,6 +11,7 @@ const __dirname = dirname(__filename);
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/picsio-test-app/",
   resolve: {
     alias: {
       components: path.resolve(__dirname, "./src/components/"),
