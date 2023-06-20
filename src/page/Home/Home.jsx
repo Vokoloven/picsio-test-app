@@ -7,12 +7,27 @@ import { Form } from "@components/Form";
 import { StyledList } from "./style/StyledList";
 import { useData } from "@hooks/useData";
 
+import { getCommentsApi } from "@service/api.service";
+
 export const Home = () => {
   const [deleteComment, setDeleteComment] = useState([]);
   const response = useData(deleteComment);
   const [localValue, setLocalValue] = useState(() =>
     localStorage.getItem("textarea")
   );
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const getData = async () => {
+      const data = await getCommentsApi();
+
+      setData(data);
+    };
+    getData();
+  }, []);
+
+  console.log(data);
 
   const onClickHandler = (id) => {
     const filteredData = response.filter((item) => item.id !== id);
