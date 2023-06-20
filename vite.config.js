@@ -5,6 +5,7 @@ import { fileURLToPath } from "url";
 import path from "path";
 import { dirname } from "path";
 import svgr from "vite-plugin-svgr";
+import { viteCommonjs } from "@originjs/vite-plugin-commonjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -24,7 +25,8 @@ export default defineConfig({
   },
   plugins: [
     { enforce: "pre", ...mdx() },
-    react({ include: /\.(mdx|js|jsx|ts|tsx)$/ }),
+    react(),
+    viteCommonjs(),
     svgr({
       svgrOptions: {},
     }),
