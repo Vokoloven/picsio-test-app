@@ -16,6 +16,6 @@ For stylization used **[StyledComponents](https://styled-components.com/) && [St
 
 ## Contacts
 
-Thanks for viewing in any dobt, don't hasistate to contact me.
+Thanks for viewing, in any dobt don't hasistate to contact me.
 
 You can find **[Contacts](https://github.com/Vokoloven)** in my profile on **`GitHub`**
