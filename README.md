@@ -1,11 +1,21 @@
-# Hi there! That is picsio-test-app.
+# Hi there
 
-Project was created by [Vite](https://vitejs.dev/).\
-In case if you want to download test app and start:\
-At **first** should install dependencies by command `npm install`
+## Project Installation
 
-## You can use next commands:
+First of all that project created by **`Vite + ReactJs`**
+In case if you wanna download it and start on your `PC` you should do next steps:
 
-1. **Dev Mode** `npm run dev`
-2. **Build Mode** `npm run buld`
-3. **Lint Check** `npm run lint`
+1. `npm install` - **Install all dependencies**
+2. `npm run dev` - **Start app in dev mode**
+3. `npm run lint` - **Lint error check**
+4. `npm run build` - **Create app for production**
+
+## About Stylization
+
+For stylization used **[StyledComponents](https://styled-components.com/) && [StyledSystem](https://styled-system.com/)**
+
+## Contacts
+
+Thanks for viewing in any dobt, don't hasistate to contact me.
+
+You can find **[Contacts](https://github.com/Vokoloven)** in my profile on **`GitHub`**
