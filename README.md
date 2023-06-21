@@ -1,7 +1,7 @@
 # Hi there! That is picsio-test-app.
 
 Projects created by [Vite](https://vitejs.dev/)
-If you want to download it and start:
+If you want to download it and start:./
 You should install deps by commant `npm install`
 
 ## You can use next commands:
