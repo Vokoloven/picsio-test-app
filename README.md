@@ -1,8 +1,8 @@
 # Hi there! That is picsio-test-app.
 
-Projects created by [Vite](https://vitejs.dev/)
-If you want to download it and start:./
-You should install deps by commant `npm install`
+Project was created by [Vite](https://vitejs.dev/)
+If you want to download test app and start:.\
+You should install dependencies by command `npm install`
 
 ## You can use next commands:
 
