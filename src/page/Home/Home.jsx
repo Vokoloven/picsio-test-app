@@ -7,7 +7,6 @@ import { Form } from "@components/Form";
 import { StyledList } from "./style/StyledList";
 import { useData } from "@hooks/useData";
 import { onSubmitHandler } from "@components/Form/onSubmitHandler";
-import { Loader } from "@components/Loader";
 
 export const Home = () => {
   const [deleteComment, setDeleteComment] = useState([]);
@@ -33,7 +32,6 @@ export const Home = () => {
     <Container>
       <Box display={"flex"}>
         <StyledHomeBox>
-          <Loader isLoaded={response} />
           <Box as={"ul"}>
             {response?.length > 0 &&
               response.map(({ id, body, user }) => (

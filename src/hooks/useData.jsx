@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { getCommentsApi } from "@service/api.service";
 
 export const useData = (deleteComment) => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
   const isFirstRender = useRef(true);
 
   useEffect(() => {
