@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { color, space, layout, flexbox, position } from "styled-system"
+import styled from "styled-components";
+import { color, space, layout, flexbox, position } from "styled-system";
 
 export const Box = styled("div")`
   ${color}
@@ -7,4 +7,4 @@ export const Box = styled("div")`
   ${layout}
   ${flexbox}
   ${position}
-`
+`;

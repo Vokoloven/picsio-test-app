@@ -7,7 +7,7 @@ import { Form } from "@components/Form";
 import { StyledList } from "./style/StyledList";
 import { useData } from "@hooks/useData";
 import { onSubmitHandler } from "@components/Form/onSubmitHandler";
-import { Dna } from "react-loader-spinner";
+import { Loader } from "@components/Loader";
 
 export const Home = () => {
   const [deleteComment, setDeleteComment] = useState([]);
@@ -31,25 +31,9 @@ export const Home = () => {
 
   return (
     <Container>
-      <Box display={"flex"} justifycontent={"center"} alignitems={"center"}>
+      <Box display={"flex"}>
         <StyledHomeBox>
-          {response?.length === 0 && (
-            <Box
-              display={"flex"}
-              justifycontent={"center"}
-              flexDirection={"column"}
-            >
-              <Box as={"span"}>Loading...</Box>
-              <Dna
-                visible={true}
-                height="80"
-                width="80"
-                ariaLabel="dna-loading"
-                wrapperStyle={{}}
-                wrapperClass="dna-wrapper"
-              />
-            </Box>
-          )}
+          <Loader isLoaded={response} />
           <Box as={"ul"}>
             {response?.length > 0 &&
               response.map(({ id, body, user }) => (
