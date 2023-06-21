@@ -6,8 +6,7 @@ import { Comment } from "@components/Comment";
 import { Form } from "@components/Form";
 import { StyledList } from "./style/StyledList";
 import { useData } from "@hooks/useData";
-
-import { getCommentsApi } from "@service/api.service";
+import { onSubmitHandler } from "./onSubmitHandler";
 
 export const Home = () => {
   const [deleteComment, setDeleteComment] = useState([]);
@@ -16,60 +15,9 @@ export const Home = () => {
     localStorage.getItem("textarea")
   );
 
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const getData = async () => {
-      const data = await getCommentsApi();
-
-      setData(data);
-    };
-    getData();
-  }, []);
-
-  console.log(data);
-
   const onClickHandler = (id) => {
     const filteredData = response.filter((item) => item.id !== id);
     setDeleteComment(filteredData);
-  };
-
-  const onSubmitHandler = (e) => {
-    e.preventDefault();
-    const addComment = response.reduce((prevValue, item, index) => {
-      if (index === response?.length - 1) {
-        prevValue.push(item);
-        prevValue.push({
-          id: item?.id + 1,
-          body: localValue,
-          postId: item.postId + 1,
-          user: {
-            id: item.user.id + 1,
-            username: "Test",
-          },
-        });
-      } else {
-        prevValue.push(item);
-      }
-      return prevValue;
-    }, []);
-
-    if (response.length !== 0) {
-      setDeleteComment(addComment);
-    } else {
-      setDeleteComment([
-        {
-          id: 1,
-          body: localValue,
-          postId: 1,
-          user: {
-            id: 1,
-            username: "Test",
-          },
-        },
-      ]);
-    }
-    setLocalValue("");
   };
 
   useEffect(() => {
@@ -102,6 +50,9 @@ export const Home = () => {
               localValue={localValue}
               onSubmitHandler={onSubmitHandler}
               onChangeHandler={onChangeHandler}
+              response={response}
+              setDeleteComment={setDeleteComment}
+              setLocalValue={setLocalValue}
             />
           </Box>
         </StyledHomeBox>

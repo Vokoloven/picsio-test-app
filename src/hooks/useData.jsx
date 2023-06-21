@@ -13,9 +13,9 @@ export const useData = (deleteComment) => {
     };
     if (isFirstRender.current) {
       isFirstRender.current = false;
+      getData();
       return;
     }
-    getData();
   }, []);
 
   useEffect(() => {
