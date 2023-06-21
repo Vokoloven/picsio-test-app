@@ -6,7 +6,7 @@ import { Comment } from "@components/Comment";
 import { Form } from "@components/Form";
 import { StyledList } from "./style/StyledList";
 import { useData } from "@hooks/useData";
-import { onSubmitHandler } from "./onSubmitHandler";
+import { onSubmitHandler } from "@components/Form/onSubmitHandler";
 
 export const Home = () => {
   const [deleteComment, setDeleteComment] = useState([]);

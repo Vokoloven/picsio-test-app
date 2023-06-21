@@ -2,15 +2,14 @@ import styled from "styled-components";
 
 export const StyledHomeBox = styled("div")`
   display: flex;
-  /* justify-content: center; */
+
   flex-direction: column;
   align-items: center;
 
   width: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 116px);
 
   padding-top: 100px;
-  /* padding-bottom: 25px; */
 
   background-image: linear-gradient(
     to bottom right,

@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
 
-  p,
+p,
 h1,
 h2,
 h3,
